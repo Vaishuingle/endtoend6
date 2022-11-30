@@ -1,0 +1,13 @@
+cmd: python src/models/production_model_selection.py --config=params.yaml
+deps:
+- path: src/models/production_model_selection.py
+  md5: 7796b1e018dd909e0f21daa6e386a97e
+  size: 1728
+params:
+  params.yaml:
+    random_forest.max_depth: 10
+    random_forest.n_estimators: 60
+outs:
+- path: models/model.joblib
+  md5: d47ea1a39889aca6b12263ef594e50f7
+  size: 1300528
